@@ -1,0 +1,26 @@
+<routes>
+	<vType id="car" color="0,1,0" accel="2.6" decel="4.5" length="5.0" maxSpeed="70.0" sigma="0.5" guiShape ="passenger" />
+    <vType id="truck" color="1,0,0" accel="1" decel="4.0" length="12.0" maxSpeed="50.0" sigma="0.0" guiShape ="truck" />
+    
+	<route id="route0" edges="1_2 2_3"/>
+	<route id="route1" edges="3_2 2_1"/>
+	<route id="route2" edges="5_2 2_4"/>
+	<route id="route3" edges="4_2 2_5"/>
+	
+	<!--小車/大車，東西向幹道-->
+	<flow id="f1_c" probability="0.6" from="1_2" to="2_3" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f2_c" probability="0.05" from="1_2" to="2_4" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f3_c" probability="0.1" from="1_2" to="2_5" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f4_c" probability="0.1" from="3_2" to="2_4" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f5_c" probability="0.6" from="3_2" to="2_1" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f6_c" probability="0.05" from="3_2" to="2_5" begin="0" end= "99999999" departLane="best" type="car" />	
+	<flow id="f1_t" probability="0.05" route="route0"  begin="0" end= "99999999" departLane="best" type="truck" />
+	<flow id="f2_t" probability="0.05" route="route1"  begin="0" end= "99999999" departLane="best" type="truck" />
+	
+	<!--小車/大車，南北向支道-->
+	<flow id="f3" probability="0.02" route="route2" color="0,1,1"  begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="f4" probability="0.02" route="route3" color="0,1,1"  begin="0" end= "99999999" departLane="best" type="car" />
+	
+	
+	
+</routes>
