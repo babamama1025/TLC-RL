@@ -1,2 +1,4 @@
 # TLC-RL
-Training of a Traffic Light Controlling Agent by Reinforcement Learning method with Lienar Function Approximation
+Training a Traffic Signal Controlling Agent by Reinforcement Learning method with Lienar Function Approximation
+Simulation tool: SUMO
+Python 2.7
