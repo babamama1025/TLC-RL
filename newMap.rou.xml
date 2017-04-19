@@ -1,0 +1,35 @@
+<routes>
+	<vType id="car" color="0,1,0" accel="2.6" decel="4.5" length="5.0" maxSpeed="70.0" sigma="0.5" guiShape ="passenger" />
+    <vType id="truck" color="1,0,0" accel="1" decel="4.0" length="12.0" maxSpeed="50.0" sigma="0.0" guiShape ="truck" />
+    
+	<route id="EB_L" edges="0_1 1_2"/>
+	<route id="EB_T" edges="0_1 1_3"/>
+	<route id="EB_R" edges="0_1 1_4"/>
+	
+	<route id="WB_L" edges="3_1 1_4"/>
+	<route id="WB_T" edges="3_1 1_0"/>
+	<route id="WB_R" edges="3_1 1_2"/>
+	
+	<route id="SB_L" edges="2_1 1_3"/>
+	<route id="SB_T" edges="2_1 1_4"/>
+	<route id="SB_R" edges="2_1 1_0"/>
+	
+	<route id="NB_L" edges="4_1 1_0"/>
+	<route id="NB_T" edges="4_1 1_2"/>
+	<route id="NB_R" edges="4_1 1_3"/>
+
+	
+	<flow id="EB_L" probability="0.1" route="EB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="EB_T" probability="0.2" route="EB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="EB_R" probability="0.05" route="EB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_L" probability="0.1" route="WB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_T" probability="0.2" route="WB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_R" probability="0.2" route="WB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="SB_L" probability="0.01" route="SB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="SB_T" probability="0.15" route="SB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="SB_R" probability="0.03" route="SB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="NB_L" probability="0.01" route="NB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="NB_T" probability="0.05" route="NB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="NB_R" probability="0.03" route="NB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	
+</routes>
