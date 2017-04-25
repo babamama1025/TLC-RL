@@ -19,12 +19,12 @@
 	<route id="NB_R" edges="4_1 1_3"/>
 
 	
-	<flow id="EB_L" probability="0.1" route="EB_L" begin="0" end= "99999999" departLane="best" type="car" />
-	<flow id="EB_T" probability="0.2" route="EB_T" begin="0" end= "99999999" departLane="best" type="car" />
-	<flow id="EB_R" probability="0.05" route="EB_R" begin="0" end= "99999999" departLane="best" type="car" />
-	<flow id="WB_L" probability="0.1" route="WB_L" begin="0" end= "99999999" departLane="best" type="car" />
-	<flow id="WB_T" probability="0.2" route="WB_T" begin="0" end= "99999999" departLane="best" type="car" />
-	<flow id="WB_R" probability="0.2" route="WB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="EB_L" probability="0.03" route="EB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="EB_T" probability="0.25" route="EB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="EB_R" probability="0.02" route="EB_R" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_L" probability="0.03" route="WB_L" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_T" probability="0.25" route="WB_T" begin="0" end= "99999999" departLane="best" type="car" />
+	<flow id="WB_R" probability="0.02" route="WB_R" begin="0" end= "99999999" departLane="best" type="car" />
 	<flow id="SB_L" probability="0.01" route="SB_L" begin="0" end= "99999999" departLane="best" type="car" />
 	<flow id="SB_T" probability="0.15" route="SB_T" begin="0" end= "99999999" departLane="best" type="car" />
 	<flow id="SB_R" probability="0.03" route="SB_R" begin="0" end= "99999999" departLane="best" type="car" />
