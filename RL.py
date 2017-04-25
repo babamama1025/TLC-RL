@@ -235,3 +235,4 @@ if __name__ == "__main__":
     print "computing time = ", stop-start
     traci.close()
     fout.close()
+    fsar_out.close()
